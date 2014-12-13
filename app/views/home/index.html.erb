@@ -1,1 +1,18 @@
 <h2>Welcome</h2>
+
+<div class="flash"><%=flash[:test]%> </div>
+<br>
+
+<%= link_to "About", about_path %>
+
+<%= link_to "New gifs", gifs_new_path %>
+<br>
+
+<% @gifs.each do |gif|%>
+  <li>
+<img src="<%= gif.url%>">
+  <br>
+<%= gif.title%>
+  </li>
+<%end%>
+

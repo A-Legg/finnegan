@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+.flash {
+    background-color: greenyellow;
+    text-align: center;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    margin-left: 0;
+
+}
+
+
+
